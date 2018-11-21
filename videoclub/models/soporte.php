@@ -32,9 +32,12 @@ class soporte {
     echo "<br />" . $this->precio . " (IVA no incluido)";
   }
 
-  function imprime_caracteristicas() {
-    echo "<p><b>Cliente " . $this->numero . ":</b> " . $this->nombre;
-    echo "<br>Alquileres actuales: " . $this->num_soportes_alquilados;
+  function es_hijo_o_padre()
+  {
+    if (get_parent_class($this)) {
+      return 'Hijo';
+    }
+    return 'Padre';
   }
 
 }

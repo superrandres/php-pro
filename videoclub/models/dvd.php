@@ -1,5 +1,7 @@
 <?php
 
+include_once 'soporte.php';
+
 class dvd extends soporte{
 
   public $idiomas_disponibles;

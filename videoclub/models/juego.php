@@ -1,6 +1,6 @@
 <?php
 
-include 'soporte.php';
+include_once 'soporte.php';
 
 class juego extends soporte{
 

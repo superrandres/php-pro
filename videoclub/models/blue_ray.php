@@ -1,12 +1,12 @@
 <?php
 
-include 'soporte.php';
+include_once 'soporte.php';
 
 class blue_ray extends soporte{
 
   private $duracion;
 
-  
+
   function __construct($tit, $num, $precio, $duracion){
 
     parent::__construct($tit, $num, $precio);
