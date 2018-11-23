@@ -1,4 +1,9 @@
 <?php
+
+require_once 'blue_ray.php';
+require_once 'dvd.php';
+require_once 'juego.php';
+
 class cliente {
 
   public $nombre;
@@ -93,6 +98,11 @@ class cliente {
         }
       }
     }
+  }
+
+  function imprime_caracteristicas() {
+    echo "<p><b>Cliente " . $this->numero . ":</b> " . $this->nombre;
+    echo "<br>Alquileres actuales: " . $this->num_soportes_alquilados;
   }
 
   function __destruct(){

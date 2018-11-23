@@ -1,6 +1,8 @@
 <?php
 //instanciamos un par de objetos cliente
 
+include "../models/cliente.php";
+
 $cliente1 = new cliente("Pepe", 1);
 
 $cliente2 = new cliente("Roberto", 564);
@@ -60,4 +62,4 @@ $cliente1->alquila($soporte4);
 
 //listo los elementos alquilados
 
-$cliente1->lista_alquileres(); 
+$cliente1->lista_alquileres();
